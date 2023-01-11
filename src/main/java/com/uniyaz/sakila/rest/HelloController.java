@@ -1,5 +1,6 @@
 package com.uniyaz.sakila.rest;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "ali")
 public class HelloController {
 
-    @RequestMapping(path = "/veli")
+    @GetMapping(path = "/veli")
     public String hello() {
         return "Hello Veli";
     }
