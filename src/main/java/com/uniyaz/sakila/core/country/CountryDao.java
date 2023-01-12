@@ -12,4 +12,5 @@ public interface CountryDao extends JpaRepository<Country, Long> {
 
     @Query("select country from Country country where country.country = :countryName")
     public List<Country> findAllByName(@Param("countryName") String countryName);
+
 }
