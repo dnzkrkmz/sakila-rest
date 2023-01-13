@@ -1,4 +1,4 @@
-package com.uniyaz.sakila.core.country;
+package com.uniyaz.sakila.core.city;
 
 
 
@@ -28,7 +28,7 @@ public class City extends BaseEntity {
     @Column(name = "last_update")
     private Date lastUpdate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.MERGE)
     @JoinColumn(name = "country_id")
     @ForeignKey(name = "fk_city_country")
     private Country country;

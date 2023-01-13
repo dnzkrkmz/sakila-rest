@@ -1,5 +1,7 @@
 package com.uniyaz.sakila.core.country;
 
+import com.uniyaz.sakila.core.city.City;
+import com.uniyaz.sakila.core.city.CityDto;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -27,4 +29,5 @@ public class CountryConverter {
 
         return countryDtoList;
     }
+
 }

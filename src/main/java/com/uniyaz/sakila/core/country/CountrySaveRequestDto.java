@@ -1,8 +1,7 @@
 package com.uniyaz.sakila.core.country;
 
-public class CountryDto {
+public class CountrySaveRequestDto {
     private String name;
-    private Long id;
 
     public String getName() {
         return name;
@@ -10,13 +9,5 @@ public class CountryDto {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 }
