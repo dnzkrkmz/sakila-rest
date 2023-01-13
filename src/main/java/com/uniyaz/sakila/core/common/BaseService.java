@@ -7,6 +7,7 @@ import java.util.List;
 public abstract class BaseService<T extends BaseEntity, D extends BaseDao> {
 
     @Autowired
+
     D dao;
 
     public List<T> findAll() {
